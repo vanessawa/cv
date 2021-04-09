@@ -61,6 +61,12 @@ body {
   color: var(--accent-text-color);
 }
 
+.header:hover .hire-me,
+.header:focus-within .hire-me {
+  opacity: 1;
+  transform: scale(0.3);
+}
+
 .heading-group {
   font-size: 4rem;
 }
@@ -81,7 +87,7 @@ body {
   position: absolute;
   right: 1rem;
   top: 1rem;
-  padding: 0, 625rem;
+  padding: 0.625rem;
   border-radius: 0.25rem;
   background-color: var(--background-color);
 }
@@ -116,13 +122,21 @@ body {
 }
 
 .nav-link {
-  padding: 0, 25rem 0, 5rem;
+  padding: 0.25rem 0.5rem;
   color: var(--nav-link-text-color);
+  transition: background-color 0.3s ease-in-out;
 }
 
 .nav-link:hover {
   color: var(--text-color);
   background-color: var(--nav-link-hover-color);
+}
+
+.nav-link:focus {
+  color: var(--text-color);
+  background-color: var(--nav-link-hover-color);
+  outline-style: dashed;
+  outline-width: 3px;
 }
 
 .nav-link:active {
@@ -153,7 +167,7 @@ body {
 }
 
 .main > * {
-  border-top: 0, 125rem solid var(--accent-color-dark);
+  border-top: 0.125rem solid var(--accent-color-dark);
   padding: 0 1rem;
 }
 
