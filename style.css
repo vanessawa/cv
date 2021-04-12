@@ -61,12 +61,6 @@ body {
   color: var(--accent-text-color);
 }
 
-.header:hover .hire-me,
-.header:focus-within .hire-me {
-  opacity: 1;
-  transform: scale(0.3);
-}
-
 .heading-group {
   font-size: 4rem;
 }
@@ -92,6 +86,11 @@ body {
   background-color: var(--background-color);
 }
 
+.header:hover .hire-me,
+.header:focus-within .hire-me {
+  opacity: 1;
+  transform: scale(0.3);
+}
 @media screen and (min-width: 992px) {
   .hire-me {
     position: fixed;
@@ -176,6 +175,27 @@ body {
 }
 
 .article-heading {
+  position: relative;
+  left: -1rem;
+}
+
+.main-article {
+  border-top: 0.125rem solid var(--accent-color);
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main-article {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+  }
+
+  .main-article-content {
+    margin-top: 4rem;
+  }
+}
+
+.main-article-heading {
   position: relative;
   left: -1rem;
 }
